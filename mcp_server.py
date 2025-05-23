@@ -46,7 +46,7 @@ class PaperLLM:
             url,
             json=payload,
             headers={"X-API-Key": key, "User-Agent": PaperLLM.UA},
-            timeout=20,
+            timeout=120,
         )
         r.raise_for_status()
         return r.json()
