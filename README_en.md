@@ -61,7 +61,6 @@ python mcp_server.py --sse --port 8001
 ├── README_en.md
 ├── README_zh.md
 ├── requirements.txt
-├── MCP_SERVER_CONFIG.md
 └── paperllm.conf         # Main configuration file for PaperLLM MCP server
 ```
 
@@ -146,19 +145,17 @@ python mcp_server.py
 
 ## MCP Client Configuration Examples
 
-### Cursor Configuration
+### Cursor Configuration （windows system）
 
 ```json
 {
-  "mcpServers": {
-    "paperllm": {
-      "command": "npx",
-      "args": ["-y", "@lanjunfei/paperllm_mcp", "--sse", "--port", "8001"],
-      "env": {
-        "PAPERLLM_API_KEY": "your-api-key-here"
-      }
-    }
-  }
+  "command": "C:\\Windows\\System32\\cmd.exe",
+  "args": [
+    "/c", 
+    "npx", 
+    "-y", 
+    "@lanjunfei/paperllm_mcp"
+  ]
 }
 ```
 

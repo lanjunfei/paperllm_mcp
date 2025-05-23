@@ -61,7 +61,6 @@ python mcp_server.py --sse --port 8001
 ├── README_en.md
 ├── README_zh.md
 ├── requirements.txt
-├── MCP_SERVER_CONFIG.md
 └── paperllm.conf         # PaperLLM MCP 服务端主配置文件
 ```
 
@@ -146,23 +145,21 @@ python mcp_server.py
 
 ## MCP 客户端配置示例
 
-### Cursor 配置
+### Cursor 配置（windows系统）
 
 ```json
 {
-  "mcpServers": {
-    "paperllm": {
-      "command": "npx",
-      "args": ["-y", "@lanjunfei/paperllm_mcp", "--sse", "--port", "8001"],
-      "env": {
-        "PAPERLLM_API_KEY": "your-api-key-here"
-      }
-    }
-  }
+  "command": "C:\\Windows\\System32\\cmd.exe",
+  "args": [
+    "/c", 
+    "npx", 
+    "-y", 
+    "@lanjunfei/paperllm_mcp"
+  ]
 }
 ```
 
-### CherryStudio 配置
+### CherryStudio 配置（需要本地运行python mcp_server.py --sse --host 0.0.0.0 --port 8001）
 
 ```json
 {

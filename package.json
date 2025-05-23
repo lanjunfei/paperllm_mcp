@@ -16,7 +16,6 @@
     "requirements.txt",
     "README_en.md",
     "README_zh.md",
-    "MCP_SERVER_CONFIG.md",
     "paperllm.conf"
   ],
   "keywords": [
