@@ -1,0 +1,49 @@
+{
+  "name": "@lanjunfei/paperllm_mcp",
+  "version": "1.0.1",
+  "description": "本项目通过 www.paperllm.com 官方 API，提供 MCP 服务。",
+  "main": "index.js",
+  "bin": {
+    "paperllm_mcp": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js",
+    "mcp_server.py",
+    "requirements.txt",
+    "README_en.md",
+    "README_zh.md",
+    "MCP_SERVER_CONFIG.md",
+    "paperllm.conf"
+  ],
+  "keywords": [
+    "mcp",
+    "paperllm",
+    "llm",
+    "paper",
+    "ai",
+    "server",
+    "python"
+  ],
+  "author": "lanjunfei",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lanjunfei/paperllm_mcp.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "os": [
+    "win32",
+    "darwin",
+    "linux"
+  ],
+  "bugs": {
+    "url": "https://github.com/lanjunfei/paperllm_mcp/issues"
+  },
+  "homepage": "https://github.com/lanjunfei/paperllm_mcp#readme"
+}

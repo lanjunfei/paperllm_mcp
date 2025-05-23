@@ -26,10 +26,10 @@ This project provides a local MCP Server that acts as a bridge to the [www.paper
 
 ```bash
 # Global installation
-npm install -g paperllm_mcp
+npm install -g @lanjunfei/paperllm_mcp
 
 # Or run directly (no installation needed)
-npx paperllm_mcp --sse --port 8001
+npx @lanjunfei/paperllm_mcp --sse --port 8001
 ```
 
 ### Method 2: Source Code
@@ -89,11 +89,11 @@ debug = false
 
 ```bash
 # 1. Run directly (recommended)
-npx paperllm_mcp --sse --port 8001
+npx @lanjunfei/paperllm_mcp --sse --port 8001
 
 # 2. Or install globally then run
-npm install -g paperllm_mcp
-paperllm_mcp --sse --port 8001
+npm install -g @lanjunfei/paperllm_mcp
+@lanjunfei/paperllm_mcp --sse --port 8001
 
 # 3. Test environment
 npm test  # Check Python environment and dependencies
@@ -153,7 +153,7 @@ python mcp_server.py
   "mcpServers": {
     "paperllm": {
       "command": "npx",
-      "args": ["-y", "paperllm_mcp", "--sse", "--port", "8001"],
+      "args": ["-y", "@lanjunfei/paperllm_mcp", "--sse", "--port", "8001"],
       "env": {
         "PAPERLLM_API_KEY": "your-api-key-here"
       }
@@ -180,7 +180,7 @@ python mcp_server.py
 {
   "mcpServers": {
     "paperllm": {
-      "command": "paperllm_mcp",
+      "command": "@lanjunfei/paperllm_mcp",
       "args": ["--sse", "--port", "8001"]
     }
   }
@@ -212,14 +212,14 @@ python mcp_server.py
 4. **Port already in use**
    ```bash
    # Use a different port
-   paperllm_mcp --sse --port 8002
+   @lanjunfei/paperllm_mcp --sse --port 8002
    ```
 
 ### Debug Mode
 
 ```bash
 # Enable debug output
-paperllm_mcp --sse --port 8001
+@lanjunfei/paperllm_mcp --sse --port 8001
 # Or set environment variable
 set DEBUG=true
 ```
@@ -235,7 +235,7 @@ Please refer to the official PaperLLM documentation for API and SDK usage terms.
 
 ## Related Links
 
-- [NPM Package](https://www.npmjs.com/package/paperllm_mcp)
+- [NPM Package](https://www.npmjs.com/package/@lanjunfei/paperllm_mcp)
 - [GitHub Repository](https://github.com/lanjunfei/paperllm_mcp)
 - [PaperLLM Official Website](https://www.paperllm.com)
 

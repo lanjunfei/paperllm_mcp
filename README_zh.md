@@ -26,10 +26,10 @@
 
 ```bash
 # 全局安装
-npm install -g paperllm_mcp
+npm install -g @lanjunfei/paperllm_mcp
 
 # 或直接运行（无需安装）
-npx paperllm_mcp --sse --port 8001
+npx @lanjunfei/paperllm_mcp --sse --port 8001
 ```
 
 ### 方式二：源码运行
@@ -89,11 +89,11 @@ debug = false
 
 ```bash
 # 1. 直接运行（推荐）
-npx paperllm_mcp --sse --port 8001
+npx @lanjunfei/paperllm_mcp --sse --port 8001
 
 # 2. 或全局安装后运行
-npm install -g paperllm_mcp
-paperllm_mcp --sse --port 8001
+npm install -g @lanjunfei/paperllm_mcp
+@lanjunfei/paperllm_mcp --sse --port 8001
 
 # 3. 测试环境
 npm test  # 检查 Python 环境和依赖
@@ -153,7 +153,7 @@ python mcp_server.py
   "mcpServers": {
     "paperllm": {
       "command": "npx",
-      "args": ["-y", "paperllm_mcp", "--sse", "--port", "8001"],
+      "args": ["-y", "@lanjunfei/paperllm_mcp", "--sse", "--port", "8001"],
       "env": {
         "PAPERLLM_API_KEY": "your-api-key-here"
       }
@@ -180,7 +180,7 @@ python mcp_server.py
 {
   "mcpServers": {
     "paperllm": {
-      "command": "paperllm_mcp",
+      "command": "@lanjunfei/paperllm_mcp",
       "args": ["--sse", "--port", "8001"]
     }
   }
@@ -212,14 +212,14 @@ python mcp_server.py
 4. **端口被占用**
    ```bash
    # 使用其他端口
-   paperllm_mcp --sse --port 8002
+   @lanjunfei/paperllm_mcp --sse --port 8002
    ```
 
 ### 调试模式
 
 ```bash
 # 开启调试输出
-paperllm_mcp --sse --port 8001
+@lanjunfei/paperllm_mcp --sse --port 8001
 # 或设置环境变量
 set DEBUG=true
 ```
@@ -235,7 +235,7 @@ API 及 SDK 使用请遵循官方文档及协议。
 
 ## 相关链接
 
-- [NPM 包页面](https://www.npmjs.com/package/paperllm_mcp)
+- [NPM 包页面](https://www.npmjs.com/package/@lanjunfei/paperllm_mcp)
 - [GitHub 仓库](https://github.com/lanjunfei/paperllm_mcp)
 - [PaperLLM 官网](https://www.paperllm.com)
 
